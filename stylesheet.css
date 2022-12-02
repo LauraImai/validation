@@ -1,0 +1,130 @@
+/* Resetando o layout inicial do HTML */
+* {
+    margin: 0px; /* Tira a margem */
+    padding: 0px;
+}
+body {
+    font: 500 1rem "Montserrat", sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none; /* tirar o sublinhado */
+}
+img {
+    display: block; 
+    max-width: 100%; /* Aumenta sem perder a qualidade */
+}
+* {
+    box-sizing: border-box; /* Soma ao tamanho interno */
+}
+.grandeCafe {
+    height: 100vh;
+    background-image: url(./cafe-assets/cup-coffee-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.menuItem {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* tentativa de mexer com o círculo que tem aqui */
+.menuLogo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+}
+.menuNav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menuNav a {
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px;
+    color: #D4A017;
+}
+.menuNav a:hover {
+    color: #f4f4f4;
+}
+.buttonMenu {
+    /*flex: 1 1 20px;*/
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    background-color: #D4A017;
+    color: #f4f4f4;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+    border-radius: 8px;
+}
+.grandeCafe h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    max-width: 960px;
+    padding-left: 200px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #D4A017;
+    margin-bottom: 1rem;
+}
+.grandeCafe h3 {
+    color: #f4f4f4;
+}
+.fimCapa {
+    display: block;
+    flex-wrap: wrap;
+}
+.fimCapa button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    background-color: #D4A017;
+    color: #f4f4f4;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 150px;
+    height: 350px;
+    background: linear-gradient(100deg, #1b1717, #453535);
+}
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.rede {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    font: 500 1.24rem "Monserrat", sans-serif;
+    color: #f4f4f4;
+    font-weight: bold;
+}
