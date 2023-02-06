@@ -8,9 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="link" rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">/ -->
     <link rel="icon" href="./cafe-assets/coffee-icon.svg">
     <title>Coffee Break</title>
 </head>
@@ -33,7 +30,7 @@
                 </div>
             </header>
             <div class="corpoCafe">
-                <h1>Dormir é um fraco substituto <br> para o café ;)</h1>
+                <h1>Dormir é um fraco substituto para o café ;)</h1>
                 <h2>Afinal, sempre tem um trabalho para entregar no outro dia :D</h2>
             
                 <div class="fimCapa">
@@ -67,35 +64,118 @@
         </section>
 
         <section class="pq" id="pq">
+            <div class="texto-de-fundo">
+                <p> C A F É </p>
+            </div>
             <h2>Por que o café?</h2>
             <p class="subtitulo">Tirando os motivos óbvios: o sabor, o aroma, a textura...</p>
             <div class="card-Pq">
                 <div class="card">
-                    <div class="num">1</div>
-                    <div class="motivo">Cafeína é legal</div>
+                    <div class="num-mot">
+                        <div class="num">1</div>
+                        <h3>Cafeína é legal</h3>
+                    </div>
                     <ul>
-                        <li>Programar é uma <br>tarefa <br>que exige muito <br>foco, <br>concentração e paciência, <br> pontos em qua a cafeína <br> contruibui <br> significativamente.</li>
+                        <li>Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em qua a cafeína contruibui significativamente.</li>
                     </ul>
                 </div>
             
                 <div class="card">
-                    <div class="num">2</div>
-                    <div class="motivo">Cultura</div>
+                    <div class="num-mot">
+                        <div class="num">2</div>
+                        <h3>Cultura</h3>
+                    </div>
+                    
                     <ul>
-                        <li>Em empresas, é comum <br> ter cafeteiras e xícaras <br> personalizadas, com sua <br> linguagem de <br> programação favorita.</li>
-                        <li>Até Java(linguagem) foi <br> nomeada graças a um café!</li>
+                        <li>Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita.</li>
+                        <li>Até Java(linguagem) foi nomeada graças a um café!</li>
                     </ul>
                 </div>
 
                 <div class="card">
-                    <div class="num">3</div>
-                    <div class="motivo">"Uma representação da <br>realidade..."</div>
+                    <div class="num-mot">
+                        <div class="num">3</div>
+                        <h3>"Uma representação da realidade..."</h3>
+                    </div>
+                    
                     <img src="./cafe-assets/tirinha.png" alt="tirinha">
                 </div>
             </div>
         </section>
 
         <!-- Falta a parte dos relatos dos amantes -->
+        <section class="relatos" id="relatos">
+            <h2>Relatos dos amantes</h2> 
+            <p class="subtitulo">"Eu acredito na supremacia do café!"</p>
+            <div class="relatoContainer">
+                <fieldset class="relatoPessoal" style="display: block;">
+                    <legend>
+                        <img src="./foto1 1.png" alt="Nitto">
+                        <h3>Arthur Nitto</h3>
+                    </legend>
+                    <p> “ Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado. ”</p>    
+                </fieldset>
+                <fieldset class="relatoPessoal" style="display: block;">
+                    <legend>
+                        <img src="./image 2.png" alt="Pirro">
+                        <h3>Marcelo Pirro</h3>
+                    </legend>
+                    <p>"Minha relação com o café é tipo: 'eu cheguei em um ponto em que eu preciso do café pra funcionar'. Eu sinto muito essa vibe de que é o café que 'starta' o meu dia e me dá energia pra fazer as paradas."</p>
+                </fieldset>
+                <fieldset class="relatoPessoal" style="display: block;">
+                    <legend>
+                        <img src="./image 4.png" alt="Titi">
+                        <h3>Thiago Proença</h3>
+                    </legend>
+                    <p>"Eu gosto da sensação de tranquilidade ao aproveitar uma boa xícara de café logo pela manhã, depois de uma boa noite de sono, antes de começar a correria do dia-a-dia."</p>
+                </fieldset>
+                <a id="prev" onclick="plusSlides(-1)">❮</a>
+                <a id="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div class="canecaPassador">
+                <svg width="25" height="28" viewBox="0 0 25 28" class="dot" onclick="currentSlide(1)" style="fill: rgb(239, 163, 49);">
+                    <path d="M2.77778 0H5.55556V4.42019H2.77778V0ZM8.33333 0H11.1111V4.42019H8.33333V0ZM13.8889 0H16.6667V4.42019H13.8889V0ZM22.2222 10.3138H19.4444V8.84037C19.4444 8.4496 19.2981 8.07484 19.0376 7.79852C18.7772 7.52221 18.4239 7.36698 18.0556 7.36698H1.38889C1.02053 7.36698 0.667263 7.52221 0.406796 7.79852C0.146329 8.07484 0 8.4496 0 8.84037V23.5743C0 24.7466 0.438987 25.8709 1.22039 26.6999C2.00179 27.5288 3.0616 27.9945 4.16667 27.9945H15.2778C16.3828 27.9945 17.4427 27.5288 18.2241 26.6999C19.0055 25.8709 19.4444 24.7466 19.4444 23.5743H22.2222C23.7542 23.5743 25 22.2527 25 20.6275V13.2606C25 11.6354 23.7542 10.3138 22.2222 10.3138ZM19.4444 20.6275V13.2606H22.2222L22.225 20.6275H19.4444Z"></path>
+                </svg>
+    
+                <svg width="25" height="28" viewBox="0 0 25 28" class="dot" onclick="currentSlide(2)" style="fill: white;">
+                    <path d="M2.77778 0H5.55556V4.42019H2.77778V0ZM8.33333 0H11.1111V4.42019H8.33333V0ZM13.8889 0H16.6667V4.42019H13.8889V0ZM22.2222 10.3138H19.4444V8.84037C19.4444 8.4496 19.2981 8.07484 19.0376 7.79852C18.7772 7.52221 18.4239 7.36698 18.0556 7.36698H1.38889C1.02053 7.36698 0.667263 7.52221 0.406796 7.79852C0.146329 8.07484 0 8.4496 0 8.84037V23.5743C0 24.7466 0.438987 25.8709 1.22039 26.6999C2.00179 27.5288 3.0616 27.9945 4.16667 27.9945H15.2778C16.3828 27.9945 17.4427 27.5288 18.2241 26.6999C19.0055 25.8709 19.4444 24.7466 19.4444 23.5743H22.2222C23.7542 23.5743 25 22.2527 25 20.6275V13.2606C25 11.6354 23.7542 10.3138 22.2222 10.3138ZM19.4444 20.6275V13.2606H22.2222L22.225 20.6275H19.4444Z"></path>
+                </svg>
+    
+                <svg width="25" height="28" viewBox="0 0 25 28" class="dot" onclick="currentSlide(3)" style="fill: white;">
+                    <path d="M2.77778 0H5.55556V4.42019H2.77778V0ZM8.33333 0H11.1111V4.42019H8.33333V0ZM13.8889 0H16.6667V4.42019H13.8889V0ZM22.2222 10.3138H19.4444V8.84037C19.4444 8.4496 19.2981 8.07484 19.0376 7.79852C18.7772 7.52221 18.4239 7.36698 18.0556 7.36698H1.38889C1.02053 7.36698 0.667263 7.52221 0.406796 7.79852C0.146329 8.07484 0 8.4496 0 8.84037V23.5743C0 24.7466 0.438987 25.8709 1.22039 26.6999C2.00179 27.5288 3.0616 27.9945 4.16667 27.9945H15.2778C16.3828 27.9945 17.4427 27.5288 18.2241 26.6999C19.0055 25.8709 19.4444 24.7466 19.4444 23.5743H22.2222C23.7542 23.5743 25 22.2527 25 20.6275V13.2606C25 11.6354 23.7542 10.3138 22.2222 10.3138ZM19.4444 20.6275V13.2606H22.2222L22.225 20.6275H19.4444Z"></path>
+                </svg>                                                    
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("relatoPessoal");
+                    var dots = document.getElementsByClassName("dot");
+
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].style.fill = "white";
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].style.fill = "#efa331";
+                }
+            </script>
+        </section>
         
         <section class="duvidas" id="duvidas">
             <h2>Ainda em dúvida?</h2>
